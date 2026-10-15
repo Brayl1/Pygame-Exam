@@ -1,4 +1,4 @@
-# Galaxy Defender 2.0 — Endless & Energy
+# Tigbantay Sa Kalibutan — Endless & Energy
 
 A complete, resizable **Python + Tkinter** arcade game for **Group 3**. Choose a five-wave campaign or an endless survival run. Collect energy to evolve from one laser into a spread of fast shots, piercing lances, orbiting drones, and homing bolts.
 

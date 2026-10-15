@@ -2,8 +2,6 @@
 
 A complete, resizable **Python + Tkinter** arcade game for **Group 3**. Choose a five-wave campaign or an endless survival run. Collect energy to evolve from one laser into a spread of fast shots, piercing lances, orbiting drones, and homing bolts.
 
-![Endless mode title screen](docs/screenshots/menu.png)
-
 ## Start the game
 
 Use **Python 3.10 or newer**; Python 3.12 is the tested baseline. Extract the entire ZIP, open the folder containing `main.py`, then run:
@@ -63,10 +61,6 @@ Energy is cumulative for the current run. Taking damage and using Nova do not re
 | 8 | 48 | TEMPEST | 9 | 10.0 | Seven main shots, two drone shots, plus two homing bolts every 1.6 seconds when a target is visible |
 
 Projectile speed also grows from 680 to 960 world units per second for the main weapon. Rapid fire adds **two more barrels** and reduces the firing interval to 62% of normal for eight seconds. At level eight, that means **11 shots per boosted salvo**, plus periodic homing bolts. Actual cadence depends on frame timing.
-
-Weapon level caps at eight to keep the screen and performance manageable. Additional energy still awards points and replenishes Nova charge. Open **How to Play → Arsenal** to view all tiers in the game.
-
-![Maximum-level projectile patterns](docs/screenshots/combat.png)
 
 ## Nova, missiles, and reserve pickups
 
@@ -129,18 +123,6 @@ The three sorts are explicit implementations; built-in sorting is not substitute
 | `tests/` | Algorithms, gameplay, Endless progression, persistence, real GUI checks |
 | `docs/` | Rubric, feature map, test record, upgrade notes, contribution log |
 
-## Optional audio
-
-This build contains no WAV files. Existing audio events are available through the original optional adapter; place your own WAVs in `assets/sfx/` using the names in its README. The separate wave-clear sound updater is not part of this release. The adapter plays one effect at a time. No Pygame dependency is used.
-
-## Tests
-
-```sh
-python -m unittest discover -v
-```
-
-There are 48 tests, including four real Tkinter GUI tests. GUI checks skip on display-less Linux systems. The new cases verify energy thresholds, auto-fire, piercing, splash damage, drone/bolt creation, Nova, bounded entity counts, old-save compatibility, boss scheduling, and continuation past wave 30. Read [the test record](docs/TESTING.md) and [upgrade notes](docs/UPGRADE_V2.md).
-
 ## Group members and roles - complete before submission
 
 The guide requires a real coding contribution from every member, including design, documentation, QA, and coordination. Fill in actual names and completed work; the table below is a suggested allocation, not a claim of authorship.
@@ -153,32 +135,9 @@ The guide requires a real coding contribution from every member, including desig
 | Add name | Interface and asset designer | A screen, control, layout or asset-loader improvement | Resize, navigation, controls |
 | Add name | QA, documentation and release | Score-storage improvement, small feature or bug fix | Regression tests, README, repository |
 
-For four members, combine coordinator and QA/release duties, while retaining a coding contribution for each member. Use [the contribution log](docs/CONTRIBUTIONS.md) to record actual work. This package is an AI-assisted implementation; team members should understand and be able to explain the code they use and modify.
-
-## GitHub submission
-
-This ZIP contains the source and assets. **It is not a published GitHub repository.** Create one repository for the team, fill in the member table, and commit actual work throughout development. Do not submit only an executable, video, or screenshot.
-
-In a new empty GitHub repository, copy its URL and run these commands in this project folder. Replace the example account/repository URL first:
-
-```sh
-git init
-git add .
-git commit -m "Add Galaxy Defender Tkinter game"
-git branch -M main
-git remote add origin https://github.com/YOUR-ACCOUNT/galaxy-defender.git
-git push -u origin main
-```
-
-Do not use those initialization commands over an existing team repository; add this project to that repository and follow its normal commit workflow instead. Never include passwords, API keys, personal save files, or `.venv`. The included `.gitignore` excludes common generated files.
-
-Before submission, clone/download the repository into a clean folder, install `requirements.txt`, run `main.py`, and complete one run. Confirm the instructor can access it; give access first if the repository is private. Submit that repository link. See [the rubric and demonstration guide](docs/RUBRIC_AND_DEMO.md) for the remaining team tasks.
 
 ## Credits and references
 
-- Artwork: generated with OpenAI image generation for this Galaxy Defender Group 3 project. The exact generation prompts and asset metadata are included in `assets/`. No downloaded third-party art is bundled.
-- Fonts: DejaVu Sans Regular and Bold, bundled for consistent Canvas lettering. Their license and attribution are included in `assets/fonts/LICENSE.txt`.
-- Source implementation: AI-assisted Python/Tkinter project prepared for team review, adaptation, and demonstration.
 - [Python Tkinter documentation](https://docs.python.org/3/library/tkinter.html)
 - [Pillow ImageTk documentation](https://pillow.readthedocs.io/en/stable/reference/ImageTk.html)
 - Course requirements: the supplied *Python Game Development Midterm Lab Exam Guide*, Group 3 Galaxy Defender.

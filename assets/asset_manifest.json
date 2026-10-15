@@ -1,0 +1,191 @@
+{
+  "pack_name": "Galaxy Defender - Group 3",
+  "version": "1.0",
+  "art_style": "Illustrated 2D arcade, metallic armor, cyan player, purple-red enemies",
+  "generation_method": "OpenAI built-in image generator",
+  "note": "Static source artwork. Gameplay behavior and animation are not included.",
+  "bounds_format": "[left, top, right, bottom], exclusive right and bottom, alpha > 16",
+  "display_width_note": "Suggested visible widths at 1280x720 after trimming outer transparent padding in the game loader; preserve aspect ratio.",
+  "assets": [
+    {
+      "id": "player_ship",
+      "file": "ships/player_ship.png",
+      "description": "Player spaceship",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "transparent_background": true,
+      "content_bounds_px": [
+        103,
+        60,
+        1152,
+        1146
+      ],
+      "forward_direction": "up",
+      "suggested_visible_width_px": 72
+    },
+    {
+      "id": "enemy_scout",
+      "file": "ships/enemy_scout.png",
+      "description": "Scout enemy",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "transparent_background": true,
+      "content_bounds_px": [
+        65,
+        95,
+        1190,
+        1162
+      ],
+      "forward_direction": "down",
+      "suggested_visible_width_px": 64
+    },
+    {
+      "id": "space_background",
+      "file": "backgrounds/space_background.png",
+      "description": "Dark space backdrop",
+      "source_size_px": [
+        1672,
+        941
+      ],
+      "transparent_background": false,
+      "content_bounds_px": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "forward_direction": "none",
+      "suggested_visible_width_px": null
+    },
+    {
+      "id": "enemy_heavy",
+      "file": "ships/enemy_heavy.png",
+      "description": "Heavy armored enemy",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "transparent_background": true,
+      "content_bounds_px": [
+        48,
+        122,
+        1207,
+        1114
+      ],
+      "forward_direction": "down",
+      "suggested_visible_width_px": 96
+    },
+    {
+      "id": "boss_ship",
+      "file": "ships/boss_ship.png",
+      "description": "Boss mothership",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "transparent_background": true,
+      "content_bounds_px": [
+        16,
+        171,
+        1239,
+        1039
+      ],
+      "forward_direction": "down",
+      "suggested_visible_width_px": 280
+    },
+    {
+      "id": "powerup_shield",
+      "file": "powerups/powerup_shield.png",
+      "description": "Shield pickup",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "transparent_background": true,
+      "content_bounds_px": [
+        137,
+        141,
+        1117,
+        1117
+      ],
+      "forward_direction": "none",
+      "suggested_visible_width_px": 36
+    },
+    {
+      "id": "powerup_repair",
+      "file": "powerups/powerup_repair.png",
+      "description": "Hull repair pickup",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "transparent_background": true,
+      "content_bounds_px": [
+        152,
+        139,
+        1102,
+        1116
+      ],
+      "forward_direction": "none",
+      "suggested_visible_width_px": 36
+    },
+    {
+      "id": "powerup_rapid_fire",
+      "file": "powerups/powerup_rapid_fire.png",
+      "description": "Rapid-fire pickup",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "transparent_background": true,
+      "content_bounds_px": [
+        142,
+        185,
+        1112,
+        1073
+      ],
+      "forward_direction": "none",
+      "suggested_visible_width_px": 36
+    },
+    {
+      "id": "projectile_player",
+      "file": "projectiles/projectile_player.png",
+      "description": "Cyan player laser",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "transparent_background": true,
+      "content_bounds_px": [
+        553,
+        195,
+        702,
+        1056
+      ],
+      "forward_direction": "up",
+      "suggested_visible_width_px": 8
+    },
+    {
+      "id": "projectile_enemy",
+      "file": "projectiles/projectile_enemy.png",
+      "description": "Red enemy plasma bolt",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "transparent_background": true,
+      "content_bounds_px": [
+        555,
+        214,
+        700,
+        978
+      ],
+      "forward_direction": "down",
+      "suggested_visible_width_px": 12
+    }
+  ]
+}

@@ -27,7 +27,7 @@ LINE = "#253951"
 class GalaxyApp:
     def __init__(self, root: tk.Tk, data_directory: Path | None = None, auto_loop: bool = True):
         self.root = root
-        root.title("Galaxy Defender | Group 3")
+        root.title("Tigbantay Sa Kalibutan | Group 3")
         width = min(1280, max(960, root.winfo_screenwidth() - 80))
         height = min(800, max(620, root.winfo_screenheight() - 90))
         root.geometry(f"{width}x{height}")
@@ -288,7 +288,7 @@ class GalaxyApp:
     def header(self):
         self.oval(40, 33, 27, 27, CYAN, "#123048", 2)
         self.text(53.5, 46.5, "G", 15, CYAN, "center", True)
-        self.text(82, 31, "GALAXY DEFENDER", 16, INK, bold=True)
+        self.text(82, 31, "Tigbantay Sa Kalibutan", 16, INK, bold=True)
         self.text(82, 55, "GROUP 03  /  ORBITAL DEFENSE", 10, MUTED)
         self.line(32, 84, 1248, 84)
 
@@ -323,8 +323,8 @@ class GalaxyApp:
         self.text(1224, 29, "LOCAL HIGH SCORE", 11, MUTED, "ne")
         self.text(1224, 46, f"{self.store.best(self.mode):,}", 27, CYAN, "ne", True)
         self.text(88, 146, "THE LAST LINE OF DEFENSE", 12, CYAN, bold=True)
-        self.text(84, 187, "GALAXY", 67, INK, bold=True)
-        self.text(84, 258, "DEFENDER", 67, INK, bold=True)
+        self.text(84, 187, "Tigbantay Sa", 67, INK, bold=True)
+        self.text(84, 258, "Kalibutan", 67, INK, bold=True)
         tagline = "Survive the infinite fleet. Stack energy.\nEvolve your arsenal." if self.mode == "endless" else "Hold the perimeter. Collect energy.\nBring your pilot home."
         self.text(91, 350, tagline, 17, MUTED, width=565)
         self.text(88, 402, "PILOT CALLSIGN", 11, MUTED, bold=True)
